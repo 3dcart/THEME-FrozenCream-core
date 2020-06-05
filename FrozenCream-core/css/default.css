@@ -32,7 +32,27 @@ body {
 footer {
 	flex-shrink: 0;
 }
-
+.homepage-blog-posts .post-image-container img {
+    height: 230px;
+    margin: 0 auto;
+}
+.product-content {
+    text-align: center;
+}
+.product-items.productList .product-item .img{
+	border:1px solid #ececec;
+}
+.product-items.productList .product-item .product-content,
+.product-items.productList .product-item .name,
+.product-items.productList .product-item .price{
+    text-align: left;
+}
+@media (max-width: 991px){
+.product-items.productList .product-item .img {
+    padding-right: 0;
+    width: 32%;
+}
+}
 body {
     font-family: 'Nunito Sans', sans-serif;
     color: #000;
@@ -41,7 +61,7 @@ body {
 h1 {
     font-size: 30px;
 }
-.flexslider .slides img {
+.flexslider.homeCarousel .slides img {
     width: 100%;
 }
 .titles {
@@ -626,8 +646,16 @@ ul.social-icons li.social-icons-label {
     color: #e76d00;
 }
 
+#home #modNewReleases .name,
+#home #modNewReleases .price,
+#home #modTopSellers .name,
+#home #modTopSellers .price{
+    text-align: center;
+}
 #modNewReleases .name,
-#modNewReleases .price {
+#modNewReleases .price,
+#modTopSellers .name,
+#modTopSellers .price{
     text-align: left;
 }
 .product-item .name  {
@@ -710,7 +738,7 @@ span.freeshipping {
 */
 .products-section {
     background-color: #fff;
-    padding: 60px 0 0;
+    padding: 20px 0 0;
 }
 .products-section h2 {
     margin: 0;
