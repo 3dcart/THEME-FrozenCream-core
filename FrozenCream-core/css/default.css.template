@@ -1,6 +1,21 @@
 /*
 ** Bootstrap over-rides
 */
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .mailinglist-input.form-control:focus {
     outline: 0;
 box-shadow:none;
@@ -730,11 +745,11 @@ span.freeshipping {
     background-color: #[product-section-bgcolor];
     padding: 20px 0 0;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     margin: 0;
     font-size: 24px;
 }
-#home .products-section h2 {
+#home .products-section h2,#home .products-section h1 {
     font-size: 24px;
     line-height: 1;
     font-weight: 600;
@@ -748,7 +763,7 @@ span.freeshipping {
     color: #[headings_color];
     font-size: 30px;
 }
-#home .products-section h2:after {
+#home .products-section h2:after,#home .products-section h1:after {
     font-size: 10px;
     line-height: 1;
     font-weight: 600;
@@ -763,7 +778,7 @@ span.freeshipping {
     float: none;
     background: #[tertiary-accent];
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     font-size: 24px;
     line-height: 1;
     font-weight: 600;
@@ -773,7 +788,7 @@ span.freeshipping {
     border-bottom: 1px solid #ececec;
     position: relative;
 }
-.products-section h2:after {
+.products-section h2:after,.products-section h1:after {
     content: "";
     width: 60px;
     height: 1px;
