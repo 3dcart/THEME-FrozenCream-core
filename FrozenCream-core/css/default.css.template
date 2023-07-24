@@ -907,7 +907,7 @@ span.freeshipping {
     }
     .site-header {
         padding: 10px;
-        background: #ab00b6;
+        background: #[navigation-bg];
         color: #fff;
     }
     .logo {
